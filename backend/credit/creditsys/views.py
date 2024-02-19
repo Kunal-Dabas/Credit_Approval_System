@@ -73,4 +73,4 @@ def Create_loan(request):
             App_serializer.save()
             return Response( App_serializer.data , status = status.HTTP_201_CREATED )
         else:
-            return Response( App_serializer.data , status = status.HTTP_201_CREATED)
+            return Response( App_serializer.data , status = status.HTTP_206_PARTIAL_CONTENT)
